@@ -10,6 +10,6 @@ public class MotorSystem
     {
         //Here, it should do the basic execution of moving a Motor at `pin` 
         //at `speed` which is rpm for `time` miliseconds.
-        
+        System.out.printf("DBG: %d %d", speed, duration);
     }
 }
