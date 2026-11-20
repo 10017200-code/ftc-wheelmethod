@@ -1,14 +1,14 @@
-package com.csayer.wheelsystem;
+package com.csayer.Motorsystem;
 
-public class WheelSystem
+public class MotorSystem
 {
     public static void main(String[] args)
     {
         System.out.println("This is only a function. Import this class inside of another class to use it.")
     };
-    public void runWheel(int pin, double speed, int time)
+    public void runMotor(Motor motor, int speed, int duration)
     {
-        //Here, it should do the basic execution of moving a wheel at `pin` 
+        //Here, it should do the basic execution of moving a Motor at `pin` 
         //at `speed` which is rpm for `time` miliseconds.
 
     }
