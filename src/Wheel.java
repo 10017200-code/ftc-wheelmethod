@@ -1,6 +1,7 @@
 package com.csayer.Motorsystem;
 
-public class Motor {
+public class Motor 
+{
     //Motor data here
     int pin;
     int type;   //0 for basic movement Motor, 1 for flicker, and 2 for rollers/misc
@@ -24,7 +25,7 @@ public class Motor {
             case 2:
                 return motor.diameter;
                 break;
-                
+
             default:
                 break;
         }
