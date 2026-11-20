@@ -1,4 +1,4 @@
-package com.csayer.Motorsystem;
+package com.csayer.MotorSystem;
 
 public class FTCMain
 {
@@ -22,5 +22,12 @@ public class FTCMain
         Motor roller1 = baseMotor.makeMotor(20, 2, 3);
         Motor roller2 = baseMotor.makeMotor(21, 2, 3);
         Motor roller3 = baseMotor.makeMotor(22, 2, 3);
+
+        //                    //
+        //      Examples      //
+        //                    //
+        
+        //1: Fetching info from a Motor object
+        
     }
 }

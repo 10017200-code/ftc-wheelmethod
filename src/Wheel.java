@@ -1,4 +1,4 @@
-package com.csayer.Motorsystem;
+package com.csayer.MotorSystem;
 
 public class Motor 
 {
