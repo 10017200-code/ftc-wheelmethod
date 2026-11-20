@@ -16,11 +16,11 @@ public class FTCMain
         Motor bRight = baseMotor.makeMotor(4, 0, 10);
 
         //Flicker
-        Motor flicker1 = baseMotor.makeMotor(10, 0, 6);
-        Motor flicker2 = baseMotor.makeMotor(11, 0, 6);
+        Motor flicker1 = baseMotor.makeMotor(10, 1, 6);
+        Motor flicker2 = baseMotor.makeMotor(11, 1, 6);
 
-        Motor bringerThinger1 = baseMotor.makeMotor(20, 0, 3);
-        Motor bringerThinger2 = baseMotor.makeMotor(21, 0, 3);
-        Motor bringerThinger3 = baseMotor.makeMotor(22, 0, 3);
+        Motor roller1 = baseMotor.makeMotor(20, 2, 3);
+        Motor roller2 = baseMotor.makeMotor(21, 2, 3);
+        Motor roller3 = baseMotor.makeMotor(22, 2, 3);
     }
 }
