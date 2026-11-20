@@ -1,4 +1,4 @@
-package com.csayer.wheelsystem
+package com.csayer.wheelsystem;
 
 public class WheelSystem
 {
@@ -6,5 +6,10 @@ public class WheelSystem
     {
         System.out.println()
     }
-    public void runwheel(int wheelnum, )
+    public void runwheel(int pin, double speed, double length)
+    {
+        //Here, it should do the basic execution of moving a wheel at `pin` 
+        //at `speed` which is rpm 
+        
+    }
 }
