@@ -5,9 +5,29 @@ public class Motor {
     int pin;
     int type;   //0 for basic movement Motor, 1 for flicker, and 2 for rollers/misc
     int diameter;
-    public static int getMotor(int value)
+    public static int getMotor(Motor motor, int value)
     {
-        //Here, itll be used to fetch stuff from the Motor object
+        //Values:
+        //0: get pin
+        //1: get type
+        //2: get diameter
+        switch(value)
+        {
+            case 0:
+                return motor.pin;
+                break;
+
+            case 1:
+                return motor.type;
+                break;
+
+            case 2:
+                return motor.diameter;
+                break;
+                
+            default:
+                break;
+        }
     }
     public Motor makeMotor(int pin, int type, int diameter)
     {
