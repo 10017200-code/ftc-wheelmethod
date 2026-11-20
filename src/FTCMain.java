@@ -6,13 +6,7 @@ public class FTCMain
     {   
         //[f, b][Left, Right]
         //Front wheels
-        Wheel fLeft = new Wheel();
-        Wheel fRight = new Wheel();
-
-        //Back wheels
-        Wheel bLeft = new Wheel();
-        Wheel bRight = new Wheel();
-
-        //Defining the wheels
+        Wheel baseWheel = new Wheel();
+        Wheel fLeft = baseWheel.makeWheel(1, 0, 10); 
     }
 }
