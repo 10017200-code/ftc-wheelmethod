@@ -1,14 +1,23 @@
 #!/bin/bash
-P="\033[1;97m|\033[0m"
+RST="\033[0m"
+BRKS="\033[1;97m[${RST}"
+BRKE="\033[1;97m]${RST}"
+BLU="\033[0;34m"
+RED="\033[0;31m"
+GRN="\033[0;32m"
 
-echo -e "${P} Comp ${P} Compiling all into ./com/"
+echo -e "${BRKS} ${BLU}Comp${RST} ${BRKE}     Compiling all into ./com/     ${BRKS} ${BLU}Comp${RST} ${BRKE}"
 javac -g -verbose -d . src/*.java
-echo -e "${P} Comp ${P} Compiling finished"
+echo -e "${BRKS} ${BLU}Comp${RST} ${BRKE}        Compiling finished         ${BRKS} ${BLU}Comp${RST} ${BRKE}"
 
-echo -e "${P} Jar  ${P} Making jar"
+echo -e "\n"
+
+echo -e "${BRKS} ${RED}Jar${RST} ${BRKE}            Making jar             ${BRKS} ${RED}Jar${RST} ${BRKE}"
 jar cvfe FTC.jar com.csayer.MotorSystem.FTCMain com/csayer/MotorSystem/*.class
-echo -e "${P} Jar  ${P} Done making jar"  
+echo -e "${BRKS} ${RED}Jar${RST} ${BRKE}         Done making jar           ${BRKS} ${RED}Jar${RST} ${BRKE}"  
 
-echo -e "${P} Run  ${P} Running"
+echo -e "\n"
+
+echo -e "${BRKS} ${GRN}Run${RST} ${BRKE}          Running class            ${BRKS} ${GRN}Run${RST} ${BRKE}"
 java com.csayer.MotorSystem.FTCMain
-echo -e "${P} Run  ${P} Done running"
+echo -e "${BRKS} ${GRN}Run${RST} ${BRKE}       Done running class          ${BRKS} ${GRN}Run${RST} ${BRKE}"
