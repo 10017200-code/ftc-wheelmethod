@@ -28,6 +28,6 @@ public class FTCMain
         //                    //
         
         //1: Fetching info from a Motor object
-        System.out.printf("The pin for the front left wheel is %s\n", fLeft.getMotor(fLeft, 1));
+        System.out.printf("The pin for the front left wheel is %s\n", fLeft.getMotor(fLeft, 0));
     }
 }
