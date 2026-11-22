@@ -4,6 +4,7 @@ public class FTCMain
 {
     public static void main(String[] args)
     {   
+        MotorSystem mSys = new MotorSystem();
         Motor baseMotor = new Motor();
 
         //[f, b][Left, Right]
