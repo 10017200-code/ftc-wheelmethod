@@ -34,5 +34,8 @@ public class FTCMain
         System.out.printf("The pin for the front right wheel is %s\n", fLeft.getMotor(fRight, 0));
         System.out.printf("The pin for the back left wheel is %s\n", fLeft.getMotor(bLeft, 0));
         System.out.printf("The pin for the back right wheel is %s\n", fLeft.getMotor(bRight, 0));
+
+        //2: Running a motor
+        mSys.runMotor(flicker1, 60, 100);
     }
 }
