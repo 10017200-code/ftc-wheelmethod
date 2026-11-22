@@ -6,7 +6,7 @@ public class Motor
     int pin;
     int type;   //0 for basic movement Motor, 1 for flicker, and 2 for rollers/misc
     int diameter;
-    public int getMotor(int value)
+    public int getMotor(Motor mt, int value)
     {
         //Values:
         //0: get pin
@@ -15,15 +15,15 @@ public class Motor
         switch(value)
         {
             case 0:
-                return self.pin;
+                return mt.pin;
                 break;
 
             case 1:
-                return self.type;
+                return mt.type;
                 break;
 
             case 2:
-                return self.diameter;
+                return mt.diameter;
                 break;
 
             default:
