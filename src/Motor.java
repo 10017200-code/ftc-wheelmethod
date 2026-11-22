@@ -16,18 +16,15 @@ public class Motor
         {
             case 0:
                 return mt.pin;
-                break;
 
             case 1:
                 return mt.type;
-                break;
 
             case 2:
                 return mt.diameter;
-                break;
 
             default:
-                break;
+                return -1;
         }
     }
     public Motor makeMotor(int pin, int type, int diameter)
