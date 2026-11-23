@@ -5,7 +5,7 @@ public class MotorSystem
     public void runWheels(Motor fl, Motor fr, Motor bl, Motor br, int speed, int duration, int dir)
     {
         System.out.printf("[MotorSystem][runWheels][DBG] Direction:%d Speed:%d Duration:%d\n", dir, speed, duration);
-        System.out.printf("[MotorSystem][runWheels][DBG] WheelPins:\n%d\n%d\n%d\n%d\n", fl.pin, fr.pin, bl.pin, br.pin);
+        System.out.printf("[MotorSystem][runWheels][DBG] WheelPins:\nFL: %d FR: %d\nBL: %d BR: %d", fl.pin, fr.pin, bl.pin, br.pin);
     }
     public void runMotor(Motor motor, int speed, int duration, int dir)
     {
