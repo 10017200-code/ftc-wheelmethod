@@ -12,20 +12,12 @@ public class Motor
         //0: get pin
         //1: get type
         //2: get diameter
-        switch(value)
-        {
-            case 0:
-                return mt.pin;
-
-            case 1:
-                return mt.type;
-
-            case 2:
-                return mt.diameter;
-
-            default:
-                return -1;
-        }
+        return switch (value) {
+            case 0 -> mt.pin;
+            case 1 -> mt.type;
+            case 2 -> mt.diameter;
+            default -> -1;
+        };
     }
     public Motor makeMotor(int pin, int type, int diameter)
     {

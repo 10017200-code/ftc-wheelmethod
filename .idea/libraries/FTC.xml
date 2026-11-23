@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="FTC">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/FTC.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
