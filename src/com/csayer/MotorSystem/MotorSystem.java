@@ -11,7 +11,7 @@ public class MotorSystem
     {
         //Here, it should do the basic execution of moving a Motor at `pin` 
         //at `speed` which is rpm for `time` milliseconds. dir is either 0 or 1, 1 is fw, you get it.
-        System.out.printf("[MotorSystem][runMotor][DBG] Duration:%d Speed:%d Pin:%d Dir:%dd\n", duration, speed, motor.pin, dir);
+        System.out.printf("[MotorSystem][runMotor][DBG] Duration:%d Speed:%d Pin:%d Dir:%d\n", duration, speed, motor.pin, dir);
     }
 
     public static void turnWheels(Motor fl, Motor fr, Motor bl, Motor br, int speed, int angle, int duration)
