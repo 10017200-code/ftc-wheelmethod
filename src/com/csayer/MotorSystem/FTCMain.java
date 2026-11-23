@@ -36,11 +36,15 @@ public class FTCMain
         System.out.printf("The pin for the back right wheel is %s\n", fLeft.getMotor(bRight, 0));
 
         //2: Running the movement wheels
-        mSys.runWheels(fLeft, fRight, bLeft, bRight, 50, 1);
+        //Runs ALL movement wheels at 50 rpm for 1 second going forwards
+        mSys.runWheels(fLeft, fRight, bLeft, bRight, 50, 1000, 1);
+
         //3: Running a motor
-        mSys.runMotor(flicker1, 60, 100, 1);
+        //Runs one motor (here the flicker) for 1 second going forwards
+        mSys.runMotor(flicker1, 60, 1000, 1);
 
         //4: Turning the movement wheels
-        mSys.turnWheels(fLeft, fRight, bLeft, bRight, 50, 90);
+        //Turns ALL movement wheels at a 90-degree angle at 50 rpm for 1 second
+        mSys.turnWheels(fLeft, fRight, bLeft, bRight, 50, 90, 1000);
     }
 }

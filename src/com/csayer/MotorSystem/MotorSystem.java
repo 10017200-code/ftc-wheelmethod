@@ -2,9 +2,9 @@ package com.csayer.MotorSystem;
 
 public class MotorSystem
 {
-    public void runWheels(Motor fl, Motor fr, Motor bl, Motor br, int speed, int dir)
+    public void runWheels(Motor fl, Motor fr, Motor bl, Motor br, int speed, int duration, int dir)
     {
-        System.out.printf("[DBG] Direction:%d Speed%d", dir, speed);
+        System.out.printf("[DBG] Direction:%d Speed%d Duration:%d", dir, speed, duration);
         System.out.printf("[DBG] WheelPins:\n%d\n%d\n%d\n%d\n", fl.pin, fr.pin, bl.pin, br.pin);
     }
     public void runMotor(Motor motor, int speed, int duration, int dir)
@@ -14,9 +14,9 @@ public class MotorSystem
         System.out.printf("[DBG] Duration:%d Speed:%d Pin:%d\n", speed, duration, motor.pin);
     }
 
-    public void turnWheels(Motor fl, Motor fr, Motor bl, Motor br, int speed, int angle)
+    public void turnWheels(Motor fl, Motor fr, Motor bl, Motor br, int speed, int angle, int duration)
     {
-        System.out.printf("[DBG] Angle:%d Speed:%d\n", angle, speed);
+        System.out.printf("[DBG] Angle:%d Speed:%d Duration:%d\n", angle, speed, duration);
         System.out.printf("[DBG] WheelPins:\n%d\n%d\n%d\n%d\n", fl.pin, fr.pin, bl.pin, br.pin);
     }
 }
