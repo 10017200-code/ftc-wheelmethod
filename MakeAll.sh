@@ -19,10 +19,9 @@ jar cvfe FTC.jar com.csayer.MotorSystem.FTCMain ShellBuild/com/csayer/MotorSyste
 echo -e "${BRKS} ${RED}Jar${RST} ${BRKE}             Done making jar           ${BRKS} ${RED}Jar${RST} ${BRKE}"
 
 echo -e "${BRKS} ${GRN}Run${RST} ${BRKE}              Running class            ${BRKS} ${GRN}Run${RST} ${BRKE}"
-cd ShellBuild && java com.csayer.MotorSystem.FTCMain
+cd ShellBuild && java com.csayer.MotorSystem.FTCMain && cd ..
 echo -e "${BRKS} ${GRN}Run${RST} ${BRKE}           Done running class          ${BRKS} ${GRN}Run${RST} ${BRKE}"
 
 echo -e "${BRKS} ${GRN}Run${RST} ${BRKE}              Running JAR              ${BRKS} ${GRN}Run${RST} ${BRKE}"
-cd ShellBuild && java com.csayer.MotorSystem.FTCMain
-echo -e "${BRKS} ${GRN}Run${RST} ${BRKE}            Done running JAR           ${BRKS} ${GRN}Run${RST} ${BRKE}"
 java -jar FTC.jar
+echo -e "${BRKS} ${GRN}Run${RST} ${BRKE}            Done running JAR           ${BRKS} ${GRN}Run${RST} ${BRKE}"
