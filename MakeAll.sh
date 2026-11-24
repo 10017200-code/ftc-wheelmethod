@@ -17,7 +17,7 @@ javac  -d ./ShellBuild/ ./src/com/csayer/MotorSystem/*.java
 echo -e "${BRKS} ${BLU}Comp${RST} ${BRKE}           Compiling finished         ${BRKS} ${BLU}Comp${RST} ${BRKE}"
 
 echo -e "${BRKS} ${RED}Jar${RST} ${BRKE}                Making jar             ${BRKS} ${RED}Jar${RST} ${BRKE}"
-jar cvfe FTC.jar com.csayer.MotorSystem.FTCMain ShellBuild/com/csayer/MotorSystem/*.class
+jar cvfe FTC.jar com.csayer.MotorSystem.FTCMain com/csayer/MotorSystem/*.class
 echo -e "${BRKS} ${RED}Jar${RST} ${BRKE}             Done making jar           ${BRKS} ${RED}Jar${RST} ${BRKE}"
 
 echo -e "${BRKS} ${GRN}Run${RST} ${BRKE}              Running class            ${BRKS} ${GRN}Run${RST} ${BRKE}"
