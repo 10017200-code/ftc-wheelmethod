@@ -1,4 +1,8 @@
 #!/bin/bash
+
+#You CANNOT run this on Windows!
+#I just realized this!
+
 RST="\033[0m"
 BRKS="\033[1;97m[${RST}"
 BRKE="\033[1;97m]${RST}"
