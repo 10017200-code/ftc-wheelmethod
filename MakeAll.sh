@@ -11,7 +11,7 @@ RED="\033[0;31m"
 GRN="\033[0;32m"
 
 echo -e "${BRKS} ${BLU}Comp${RST} ${BRKE}     Compiling all into ./ShellBuild     ${BRKS} ${BLU}Comp${RST} ${BRKE}"
-javac -g -verbose -d ./ShellBuild/ ./src/com/csayer/MotorSystem/*.java
+javac  -d ./ShellBuild/ ./src/com/csayer/MotorSystem/*.java
 echo -e "${BRKS} ${BLU}Comp${RST} ${BRKE}           Compiling finished         ${BRKS} ${BLU}Comp${RST} ${BRKE}"
 
 echo -e "${BRKS} ${RED}Jar${RST} ${BRKE}                Making jar             ${BRKS} ${RED}Jar${RST} ${BRKE}"
