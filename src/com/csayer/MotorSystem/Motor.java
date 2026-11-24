@@ -3,8 +3,9 @@ package com.csayer.MotorSystem;
 public class Motor 
 {
     public static final int MOVEMENT = 0;
-    public static final int FLICKER = 1;
-    public static final int ROLLER = 2;
+    //Just gonna comment these out until i know what the basic Motor.SERVOs do.  DO NOT DELETE!
+    //public static final int FLICKER = 1;
+    //public static final int ROLLER = 2;
     public static final int SERVO = 3;
     public static final int IZC = 4;
     public static final int SHOOTER = 5;
