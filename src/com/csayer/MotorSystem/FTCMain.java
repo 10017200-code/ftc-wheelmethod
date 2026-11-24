@@ -8,6 +8,16 @@ public class FTCMain
         //Nor 100% sure this will translate well.
         //Competition only a few days away!!!!!!!!
 
+        //Expected controls:
+        //Left stick: Movement, could just make it a fancy D-Pad internally but that's probably not what's gonna happen
+        //Right stick: Rotation, MotorSystem.turnWheels();
+        //Right trigger: Shoot (aka open gates)
+        //Right bumper: Intake and magazine
+        //Left bumper: magazine
+        //D-Pad Up: raise intake
+        //D-Pad Down: lower intake
+
+
         //Expansion hub
         //Movement
         Motor fLeft = new Motor(2, Motor.MOVEMENT, 0, 10);
@@ -40,7 +50,7 @@ public class FTCMain
 
         //IZCs
         Motor izc1 = new Motor(0, Motor.IZC, 1, 10);
-        Motor odomtrypPinPointComputer = new Motor(1, Motor.IZC, 1, 10);
+        Motor odometerPinPointComputer = new Motor(1, Motor.IZC, 1, 10);
         Motor izc2 = new Motor(2, Motor.IZC, 1, 10);
         Motor izc3 = new Motor(3, Motor.IZC, 1, 10);
 
