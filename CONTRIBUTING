@@ -1,0 +1,8 @@
+What to do as a contributor:
+PLEASE, fork the repo to make your edits and submit PRs so we can have a clean system!
+Issue reports are in the default GitHub issue tracker, an example is already there along with a pull request example
+
+The PRs are so we can easily group commits as one giant thing.
+Issues on GitHub are for the same reason.
+
+Also, please help out with converting this to actual FTC readable code rather then a sketch.
