@@ -2,11 +2,15 @@ package com.csayer.MotorSystem;
 
 public class Motor 
 {
-    public static final int BASIC = 0;
+    public static final int MOVEMENT = 0;
     public static final int FLICKER = 1;
     public static final int ROLLER = 2;
     public static final int SERVO = 3;
     public static final int IZC = 4;
+    public static final int SHOOTER = 5;
+    public static final int CHAIN = 6;
+    public static final int GATE = 7;
+    public static final int LIFT = 8;
 
     public final int port;
     public final int type;   //0 for basic movement Motor, 1 for flicker, and 2 for rollers/misc

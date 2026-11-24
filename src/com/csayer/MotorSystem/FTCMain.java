@@ -4,32 +4,36 @@ public class FTCMain
 {
     public static void main(String[] args)
     {
+        //Unnamed motors will just have generic names and types (Not types like int and String, the 2nd argument for Motor();
+        //Nor 100% sure this will translate well.
+        //Competition only a few days away!!!!!!!!
+
         //Expansion hub
         //Movement
-        Motor fLeft = new Motor(2, Motor.BASIC, 0, 10);
-        Motor fRight = new Motor(3, Motor.BASIC, 0, 10);
-        Motor bLeft = new Motor(0, Motor.BASIC, 0, 10);
-        Motor bRight = new Motor(1, Motor.BASIC, 0, 10);
+        Motor fLeft = new Motor(2, Motor.MOVEMENT, 0, 10);
+        Motor fRight = new Motor(3, Motor.MOVEMENT, 0, 10);
+        Motor bLeft = new Motor(0, Motor.MOVEMENT, 0, 10);
+        Motor bRight = new Motor(1, Motor.MOVEMENT, 0, 10);
 
         //Servos
         Motor servo1 = new Motor(0, Motor.SERVO, 0, 10);
         Motor servo2 = new Motor(1, Motor.SERVO, 0, 10);
-        Motor polGate = new Motor(2, Motor.SERVO, 0, 10);
-        Motor ntsGate = new Motor(3, Motor.SERVO, 0, 10);
-        Motor rmpLift = new Motor(4, Motor.SERVO, 0, 10);
-        Motor intLift = new Motor(5, Motor.SERVO, 0, 10);
+        Motor polGate = new Motor(2, Motor.GATE, 0, 10);
+        Motor ntsGate = new Motor(3, Motor.GATE, 0, 10);
+        Motor rmpLift = new Motor(4, Motor.LIFT, 0, 10);
+        Motor intLift = new Motor(5, Motor.LIFT, 0, 10);
 
         //Control Hub
         //Motors
-        Motor intChain = new Motor(0, Motor.BASIC, 1, 10);
-        Motor nctShooter = new Motor(1, Motor.BASIC, 1, 10);
-        Motor plnShooter = new Motor(2, Motor.BASIC, 1, 10);
-        Motor rmpWhlChain = new Motor(3, Motor.BASIC, 1, 10);
+        Motor intChain = new Motor(0, Motor.CHAIN, 1, 10);
+        Motor nctShooter = new Motor(1, Motor.SHOOTER, 1, 10);
+        Motor plnShooter = new Motor(2, Motor.SHOOTER, 1, 10);
+        Motor rmpWhlChain = new Motor(3, Motor.CHAIN, 1, 10);
 
         //Servos
-        Motor nctShooterGate = new Motor(0, Motor.SERVO, 1, 10);
+        Motor nctShooterGate = new Motor(0, Motor.GATE, 1, 10);
         Motor motor1 = new Motor(1, Motor.SERVO, 1, 10);
-        Motor plnShootergGate = new Motor(2, Motor.SERVO, 1, 10);
+        Motor plnShooterGate = new Motor(2, Motor.GATE, 1, 10);
         Motor motor2 = new Motor(3, Motor.SERVO, 1, 10);
         Motor motor3 = new Motor(4, Motor.SERVO, 1, 10);
         Motor motor4 = new Motor(5, Motor.SERVO, 1, 10);
@@ -39,7 +43,7 @@ public class FTCMain
         Motor odomtrypPinPointComputer = new Motor(1, Motor.IZC, 1, 10);
         Motor izc2 = new Motor(2, Motor.IZC, 1, 10);
         Motor izc3 = new Motor(3, Motor.IZC, 1, 10);
-        //Continue
+
         //                    //
         //      Examples      //
         //                    //
