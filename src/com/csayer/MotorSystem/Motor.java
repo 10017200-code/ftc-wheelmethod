@@ -3,7 +3,7 @@ package com.csayer.MotorSystem;
 public class Motor 
 {
     public static final int MOVEMENT = 0;
-    //Just gonna comment these out until i know what the basic Motor.SERVOs do.  DO NOT DELETE!
+    //Just gonna comment these out until I know what the basic Motor.SERVOs do.  DO NOT DELETE!
     //public static final int FLICKER = 1;
     //public static final int ROLLER = 2;
     public static final int SERVO = 3;
