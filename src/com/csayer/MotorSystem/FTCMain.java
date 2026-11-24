@@ -6,12 +6,27 @@ public class FTCMain
     {
         //[f, b][Left, Right]
         //Front Motors
-        Motor fLeft = new Motor(1, Motor.BASIC, 10);
-        Motor fRight = new Motor(2, Motor.BASIC, 10);
+        Motor fLeft = new Motor(2, Motor.BASIC, 10);
+        Motor fRight = new Motor(3, Motor.BASIC, 10);
+        Motor bLeft = new Motor(0, Motor.BASIC, 10);
+        Motor bRight = new Motor(1, Motor.BASIC, 10);
 
-        //Back Motors
-        Motor bLeft = new Motor(3, Motor.BASIC, 10);
-        Motor bRight = new Motor(4, Motor.BASIC, 10);
+        //Servos
+        Motor servo1 = new Motor(0, Motor.SERVO, 10);
+        Motor servo2 = new Motor(1, Motor.SERVO, 10);
+        Motor polGate = new Motor(2, Motor.SERVO, 10);
+        Motor ntsGate = new Motor(3, Motor.SERVO, 10);
+        Motor rmpLift = new Motor(4, Motor.SERVO, 10);
+        Motor intLift = new Motor(5, Motor.SERVO, 10);
+
+        //Control Hub
+        //Motors
+        //TODO:
+        //Use paper to update this, and make sure the names dont cause errors!
+        //And, fix the 4 errors obviously
+        Motor intChain = new Motor(0, Motor.BASIC, 10);
+        Motor nctShooter = new Motor(1, Motor.BASIC, 10);
+        //Continue...
 
         //Flicker
         Motor flicker1 = new Motor(10, Motor.FLICKER, 10);
